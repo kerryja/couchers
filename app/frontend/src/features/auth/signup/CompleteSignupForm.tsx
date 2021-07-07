@@ -41,13 +41,12 @@ import {
   BIRTHDATE_LABEL,
   BIRTHDAY_PAST_ERROR,
   BIRTHDAY_REQUIRED,
-  FEMALE,
   GENDER_LABEL,
   GENDER_REQUIRED,
   LOCATION_CONFIRM_TITLE,
   LOCATION_CONFIRM_WARN,
   LOCATION_LABEL,
-  MALE,
+  MAN,
   NAME_EMPTY,
   NAME_REQUIRED,
   NON_BINARY,
@@ -62,6 +61,7 @@ import {
   USERNAME,
   USERNAME_REQUIRED,
   USERNAME_TAKEN,
+  WOMAN,
 } from "../constants";
 
 type SignupInputs = {
@@ -304,14 +304,14 @@ export default function CompleteSignupForm() {
                     onChange={onChange}
                   >
                     <FormControlLabel
-                      value="Female"
+                      value="Woman"
                       control={<Radio />}
-                      label={FEMALE}
+                      label={WOMAN}
                     />
                     <FormControlLabel
-                      value="Male"
+                      value="Man"
                       control={<Radio />}
-                      label={MALE}
+                      label={MAN}
                     />
                     <FormControlLabel
                       value="Non-binary"
